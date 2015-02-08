@@ -11,7 +11,7 @@ rm(consumption)
 dateTime <- paste(as.Date(consumptionFeb$Date), consumptionFeb$Time)
 consumptionFeb$dateTime <- strptime(dateTime, "%Y-%m-%d %H:%M:%S")
 
-#Create the plot and save it to "plot3.png":
+#Create the plot and save it to "plot4.png":
 png("plot4.png", width = 480, height = 480)
 par(mfrow = c(2,2), mar=c(4,4,2,1), oma=c(1,0,2,1))
 with(consumptionFeb, {
